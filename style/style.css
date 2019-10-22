@@ -1,0 +1,112 @@
+body{
+	height: 2800px;
+}
+header {
+	position: fixed;
+    background-color: red;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+}
+header li {
+	display: inline-block;
+	margin-right: 10px;
+}
+header li a{
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+header li a:hover{
+	color:blue;
+	font-size: 30px;
+}
+.text{
+	.padding-top: 50px;
+	font-size: 40px;
+	width: 600px;
+}
+.sticky{
+	position: sticky;
+	top: 150px;
+	left: 50px;
+	background-color: green;
+	height: 50px;
+	width: 200px;
+	z-index: 5;
+}
+.relative {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background: aqua;
+}
+.relative:hover .child-absolute{
+	background: red;
+}
+.child-absolute{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: pink;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg) scale(1.2) skew(7deg, 7deg);
+    z-index: 4;
+    opacity: 1;
+}
+.child-absolute:hover{
+	background:yellow;
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+}
+.child-absolute2{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: green;
+	top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+.child-absolute3{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: black;
+	top: 150px;
+    left: 150px;
+    z-index: 6
+}
+.item{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	top: 20px;
+    left: 50px;
+}
+.wrapper{
+	position: relative;
+	max-width:1000px;
+	width: 100%;
+	margin:0 auto;
+}
+.child-image{
+	width: 100%;
+}
+.child-item{
+	position: absolute;
+	font-size: 40px;
+	color: white;
+	top: 50px;
+	left: 100px;
+}
+.child-item2{
+	position: absolute;
+	font-size: 40px;
+	color: white;
+	bottom: 50px;
+	right: 100px;
+}
